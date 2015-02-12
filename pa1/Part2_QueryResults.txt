@@ -1,0 +1,54 @@
++----+----------------+------------+-------+----------+
+| id | name           | population | crime | politics |
++----+----------------+------------+-------+----------+
+|  1 | Alabama        |    4833722 | Hi    | Rep      |
+|  2 | Alaska         |     735132 | Lo    | Rep      |
+|  3 | Arizona        |    6626624 | Med   | Rep      |
+|  4 | Arkansas       |    2959373 | Med   | Rep      |
+|  5 | California     |   38332521 | Hi    | Dem      |
+|  6 | Colorado       |    5268367 | Lo    | Dem      |
+|  7 | Connecticut    |    3596080 | Lo    | Dem      |
+|  8 | Delaware       |     925749 | Lo    | Dem      |
+|  9 | Florida        |   19552860 | Hi    | Dem      |
+| 10 | Georgia        |    9992167 | Hi    | Rep      |
+| 11 | Hawaii         |    1404054 | Med   | Dem      |
+| 13 | Idaho          |    1612136 | Lo    | Rep      |
+| 14 | Illinois       |   12882135 |       | NULL     |
+| 21 | Indiana        |    6570902 | Med   | Dem      |
+| 30 | Iowa           |    3090416 | Med   | Dem      |
+| 22 | Kansas         |    2893957 | Med   | Rep      |
+| 42 | Kentucky       |    4395295 | Med   | Rep      |
+| 31 | Louisiana      |    4625470 |       | NULL     |
+| 44 | Maine          |    1328302 | Lo    | Dem      |
+| 18 | Maryland       |    5928814 | Med   | Dem      |
+| 50 | Massachusetts  |    6692824 | Med   | Dem      |
+| 32 | Michigan       |    9895622 | Hi    | Dem      |
+| 26 | Minnesota      |    5420380 | Med   | Dem      |
+| 45 | Mississippi    |    2991207 | Hi    | Rep      |
+| 23 | Missouri       |    6021988 | Med   | Rep      |
+| 41 | Montana        |    1015165 | Lo    | Rep      |
+| 29 | Nebraska       |    1868516 | Lo    | Rep      |
+| 46 | Nevada         |    2790136 | Hi    | Dem      |
+| 20 | New Hampshire  |    1323459 | Lo    | Dem      |
+| 33 | New Jersey     |    8899339 | Med   | Dem      |
+| 34 | New Mexico     |    2085287 | Med   | Dem      |
+| 25 | New York       |   19651127 | Hi    | Dem      |
+| 35 | North Carolina |    9848060 | Med   | Dem      |
+| 47 | North Dakota   |     723393 | Lo    | Rep      |
+| 17 | Ohio           |   11570808 | Hi    | Dem      |
+| 43 | Oklahoma       |    3850568 | Med   | Rep      |
+| 40 | Oregon         |    3930065 | Med   | Dem      |
+| 39 | Pennsylvania   |   12773801 | Hi    | Dem      |
+| 24 | Rhode Island   |    1051511 | Lo    | Dem      |
+| 19 | South Carolina |    4774839 | Med   | Rep      |
+| 16 | South Dakota   |     844877 | Lo    | Rep      |
+| 38 | Tennessee      |    6495978 | Hi    | Rep      |
+| 28 | Texas          |   26778193 | Hi    | Rep      |
+| 48 | Utah           |    2900872 | Med   | Rep      |
+| 37 | Vermont        |     626630 | Lo    | Dem      |
+| 27 | Virginia       |    8260405 | Med   | Dem      |
+| 49 | Washington     |    6971406 | Med   | Dem      |
+| 36 | West Virginia  |    1854304 | Med   | Rep      |
+| 15 | Wisconsin      |    5742713 | Lo    | Dem      |
+| 12 | Wyoming        |     582658 | Lo    | Rep      |
++----+----------------+------------+-------+----------+

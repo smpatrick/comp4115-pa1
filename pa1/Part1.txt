@@ -1,0 +1,87 @@
+COMP4115 PA1   PART ONE
+Assigned: 5 February, 2015
+Deadline: 12 February, 2015
+
+
+1. As part of your mySQL installation, you should have a database
+called 'test'. Switch to this database with the 'use' command. What
+tables does it have?
+	This database has no tables. Result of the 'use' command is "Empty set".
+
+2. Now switch to the built-in 'mysql' database. What are the columns
+in the 'func' table? List all pertinent info. How many records exist
+in the table?  What do you suppose this table is used to store?
+	+-------+------------------------------+------+-----+---------+-------+
+	| Field | Type                         | Null | Key | Default | Extra |
+	+-------+------------------------------+------+-----+---------+-------+
+	| name  | char(64)                     | NO   | PRI |         |       |
+	| ret   | tinyint(1)                   | NO   |     | 0       |       |
+	| dl    | char(128)                    | NO   |     |         |       |
+	| type  | enum('function','aggregate') | NO   |     | NULL    |       |
+	+-------+------------------------------+------+-----+---------+-------+
+	4 rows in set (0.01 sec)
+	
+	No records exist in the table.
+	+----------+
+	| count(*) |
+	+----------+
+	|        0 |
+	+----------+
+
+	It seems as if this table is used to store functions created by the user.
+
+
+3. Create a new database called "us_states". In this database, add a
+table called "states". Add 5 columns to the table: state name (a
+string), population (an integer), an ID field, and two more of your
+own choosing. Of the two your-choice fields, at least one should be an
+ENUM. The ID field should be a primary key that auto-increments.
+
+Using the insert command, add 10 states to your table one at a time
+(using real or completely made up population data). 
+Run queries to:
+* List all the columns in your table
+	+------------+-----------------------+------+-----+---------+----------------+
+	| Field      | Type                  | Null | Key | Default | Extra          |
+	+------------+-----------------------+------+-----+---------+----------------+
+	| id         | int(11)               | NO   | PRI | NULL    | auto_increment |
+	| name       | varchar(20)           | YES  |     | NULL    |                |
+	| population | int(11)               | YES  |     | NULL    |                |
+	| crime      | enum('Hi','Med','Lo') | YES  |     | NULL    |                |
+	| politics   | enum('Rep','Dem')     | YES  |     | NULL    |                |
+	+------------+-----------------------+------+-----+---------+----------------+
+	5 rows in set (0.01 sec)
+
+* output the states in descending order of population
+	+----+-------------+------------+-------+----------+
+	| id | name        | population | crime | politics |
+	+----+-------------+------------+-------+----------+
+	|  5 | California  |   38332521 | Hi    | Dem      |
+	|  9 | Florida     |   19552860 | Hi    | Dem      |
+	| 10 | Georgia     |    9992167 | Hi    | Rep      |
+	|  3 | Arizona     |    6626624 | Med   | Rep      |
+	|  6 | Colorado    |    5268367 | Lo    | Dem      |
+	|  1 | Alabama     |    4833722 | Hi    | Rep      |
+	|  7 | Connecticut |    3596080 | Lo    | Dem      |
+	|  4 | Arkansas    |    2959373 | Med   | Rep      |
+	|  8 | Delaware    |     925749 | Lo    | Dem      |
+	|  2 | Alaska      |     735132 | Lo    | Rep      |
+	+----+-------------+------------+-------+----------+
+	10 rows in set (0.00 sec)
+* some other query of your choice that tells me something interesting about your data.
+	States with a higher population tend to have higher crime rates
+	+------------+-------+
+	| population | crime |
+	+------------+-------+
+	|     735132 | Lo    |
+	|     925749 | Lo    |
+	|    2959373 | Med   |
+	|    3596080 | Lo    |
+	|    4833722 | Hi    |
+	|    5268367 | Lo    |
+	|    6626624 | Med   |
+	|    9992167 | Hi    |
+	|   19552860 | Hi    |
+	|   38332521 | Hi    |
+	+------------+-------+
+	10 rows in set (0.00 sec)
